@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'ScribbleFont';
+  src: url('assets/fonts/Sketch\ Fine\ Serif.otf')
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'ScribbleFont', sans-serif;
+}
+
+.background {
+  background-image: url('assets/images/sketch-people.png'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: black; 
+}
+
+.title {
+    font-size: 5vw;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px #3a2e1f;
+    margin-bottom: 2rem;
+}
+
+.textbox {
+    font-family: 'Courier New', Courier, monospaces;
+    width: 80%;
+    max-width: 50vw;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    background-color: rgba(175, 175, 175); 
+    border: 2px solid #5c4630;
+    border-radius: 6px;
+    padding: 2vw;
+    font-size: 1vw;
+}
+
+.go-button {
+  font-family: inherit;
+  padding: 0.5rem 1.5rem;
+  font-size: 5rem;
+  background-color: rgba(255, 255, 255);
+  border: 2px solid #5c4630;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: #5c4630;
+  transition: background 0.3s ease;
+  height: 5vh;
+  width: 5vw;
+}
+
+.go-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*@font-face {
+    font-family: scribble-1;
+    src: url(assets/fonts/Crosshatcher\ D.otf)
+}
+
+@font-face {
+    font-family: scribble-2;
+    src: url(assets/fonts/Looks\ Sketchy.ttf)
+}
+
+@font-face {
+    font-family: scribble-3;
+    src: url(assets/fonts/RubikMarkerHatch-Regular.ttf)
+}
+
+@font-face {
+    font-family: scribble-4;
+    src: url(assets/fonts/ScribbleHummble.otf)
+}
+
+@font-face {
+    font-family: scribble-5;
+    src: url(assets/fonts/Sketch\ Coursive.ttf)
+}
+
+@font-face {
+    font-family: scribble-6;
+    src: url(assets/fonts/Sketch\ Fine\ Serif.otf)
+}
+
+@font-face {
+    font-family: scribble-7;
+    src: url(assets/fonts/Sketch\ Written\ -\ demo.ttf)
+}
+
+@font-face {
+    font-family: scribble-8;
+    src: url(assets/fonts/Sketchzone.ttf)
+}
+
+@font-face {
+    font-family: scribble-9;
+    src: url(assets/fonts/Pijamas-ejPO.ttf);
+}
+*/
