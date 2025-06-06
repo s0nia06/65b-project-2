@@ -23,31 +23,21 @@ body, html {
   overflow: hidden;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  margin-top: 2vh;
-  
-}
-
 .back{
+  position: static;
   font-family: inherit;
   font-size: 5rem;
-  background-color: rgb(70, 44, 18);
+  background-color: rgb(70, 44, 18, 0);
   border: 2px solid #9f672f;
   border-radius: 0.5vw;
   cursor: pointer;
   color: #9f672f;
-  transition: background 0.3s ease;
   height: 5vh;
   width: 5vw;
-  
 }
 
 .back:hover{
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -73,9 +63,10 @@ body, html {
   top: 100%;
   left: 10%;
   width: 100%;
-  transform: rotate(0deg) translateX(-15vw) translateY(-30vh);
+  transform: rotate(0deg) translateX(-13vw) translateY(-12vh);
   font-family: scribble;
   color: rgba(237, 170, 94, 0.5);
+  text-decoration: none;
 
   font-size: 15vw;
 }

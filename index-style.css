@@ -20,6 +20,25 @@ body, html {
   align-items: center;
 }
 
+.buttons{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 2vw;
+  align-items: inherit;
+  justify-content: center;
+}
+
+
+@keyframes background-anim {
+  0%{
+    filter: blur(10);
+    filter: invert();
+    filter: opacity(50%);
+  }
+  
+}
+
 .content {
   text-align: center;
   color: black; 
@@ -36,7 +55,7 @@ body, html {
     font-family: 'Courier New', Courier, monospaces;
     width: 80%;
     max-width: 50vw;
-    height: auto;
+    max-height: 25vh;
     margin: 0 auto 2rem auto;
     background-color: rgba(175, 175, 175); 
     border: 2px solid #5c4630;
@@ -45,22 +64,39 @@ body, html {
     font-size: 1vw;
 }
 
-.go-button {
+.button {
   font-family: inherit;
   padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255);
+  margin: 2vw;
+  margin-top:0;
+  margin-bottom: 0;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid #5c4630;
   border-radius: 0.5vw;
   cursor: pointer;
   color: #5c4630;
   transition: background 0.3s ease;
   height: 5vh;
-  width: 5vw;
+  width: auto;
+}
+.go-button{
+  font-family: inherit;
+  padding: 0.5rem 1.5rem;
+  margin: 2vw;
+  font-size: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #5c4630;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: #5c4630;
+  transition: background 0.3s ease;
+  height: 10vh;
+  width: 10vw;
 }
 
-.go-button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+.button:hover, .go-button:hover {
+  background-color: rgba(255, 255, 255);
 }
 
 /*@font-face {
