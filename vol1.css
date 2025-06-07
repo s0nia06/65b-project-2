@@ -118,6 +118,9 @@ body, html {
   width: 30vw;
   height: auto;
   transform: rotate(0deg) translate(45vw, -30vh);
+}
+
+.banana:hover{
   animation: banana-spin 2s infinite;
   animation-delay: -1s;
 }
