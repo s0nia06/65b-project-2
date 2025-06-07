@@ -28,7 +28,7 @@ body, html {
   z-index: 50;
   align-self: flex-end;
   font-family: inherit;
-  font-size: 5rem;
+  font-size: 2rem;
   background-color: rgb(70, 44, 18, 0);
   border: 2px solid #9f672f;
   border-radius: 0.5vw;
