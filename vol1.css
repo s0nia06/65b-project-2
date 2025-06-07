@@ -168,7 +168,11 @@ body, html {
   width: 40vw;
   height: auto;
   transform: rotate(0deg) translate(10vw, 10vh);
-  animation: chocolate-anim 3s infinite;
+}
+
+.chocolate:hover{
+    animation: chocolate-anim 3s infinite;
+
 }
 
 @keyframes chocolate-anim {
