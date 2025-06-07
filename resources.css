@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'ScribbleFont';
+  src: url('assets/fonts/Sketch\ Fine\ Serif.otf')
+}
+
+body{
+    background-image: url('assets/images/wood-background.jpeg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+img{
+    display: block;
+    max-width: 30%;
+    margin: auto;
+}
+
+img:hover{
+    filter:saturate(10);
+}
+
+h1{
+    font-size: 7vh;
+    text-align: center;
+    margin: 3vh;
+    font-family: ScribbleFont;
+}
+
+.resource-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.resource-list li{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospaces;
+    width: 80%;
+    max-width: 50vw;
+    max-height: 25vh;
+    margin: 0 auto 2rem auto;
+    background-color: rgba(175, 175, 175); 
+    border: 2px solid #5c4630;
+    border-radius: 6px;
+    padding: 2vw;
+    font-size: 1vw;
+    max-width: 40vw;
+    max-height: 25vh;
+}
+
+.resource-list li a{
+    color: black;
+    text-decoration: none;
+    font-size: 3vh;
+    padding-bottom: 1vw;
+    font-family: ScribbleFont;
+}
+
+.resource-list li a:hover{
+    color:blueviolet;
+}

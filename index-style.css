@@ -11,22 +11,13 @@ body, html {
 }
 
 .background {
-  background-image: url('assets/images/sketch-people.png'); /* Replace with actual image path */
+  background-image: url("assets/images/scribble-bkgrnd.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.buttons{
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 2vw;
-  align-items: inherit;
-  justify-content: center;
 }
 
 
@@ -42,44 +33,55 @@ body, html {
 .content {
   text-align: center;
   color: black; 
+  background-color: white;
+  border-radius: 1vw;
+  border-style: groove;
+  border-width: 10px;
+  border-color: #5c4630;
 }
 
 .title {
     font-size: 5vw;
     line-height: 1.2;
-    text-shadow: 1px 1px 2px #3a2e1f;
+    text-shadow: 1px 1px 2px #502a09e0;
+    color: rgba(50, 28, 2, 0.877);
     margin-bottom: 2rem;
 }
 
-.textbox {
+.textbox{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 80vh;
+}
+
+.textbox p{
     font-family: 'Courier New', Courier, monospaces;
     width: 80%;
     max-width: 50vw;
     max-height: 25vh;
-    margin: 0 auto 2rem auto;
-    background-color: rgba(175, 175, 175); 
+    margin: auto;
+    background-color: rgba(189, 123, 65, 0.696); 
     border: 2px solid #5c4630;
     border-radius: 6px;
     padding: 2vw;
     font-size: 1vw;
+    border-radius: 0.5vw;
+
+
 }
 
-.button {
-  font-family: inherit;
-  padding: 0.5rem 1.5rem;
-  margin: 2vw;
-  margin-top:0;
-  margin-bottom: 0;
-  font-size: 3rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 2px solid #5c4630;
-  border-radius: 0.5vw;
-  cursor: pointer;
-  color: #5c4630;
-  transition: background 0.3s ease;
-  height: 5vh;
-  width: auto;
+.textbox img{
+  width: 50%;
+  height: auto;
+  transform: rotate(90deg);
 }
+
+.textbox img:hover{
+  filter:saturate(10)
+}
+
 .go-button{
   font-family: inherit;
   padding: 0.5rem 1.5rem;
@@ -89,15 +91,31 @@ body, html {
   border: 2px solid #5c4630;
   border-radius: 0.5vw;
   cursor: pointer;
-  color: #5c4630;
+  color: rgb(92, 70, 48);
   transition: background 0.3s ease;
   height: 10vh;
   width: 10vw;
+  animation: go-button-anim 2s infinite;
 }
 
-.button:hover, .go-button:hover {
+.go-button:hover {
   background-color: rgba(255, 255, 255);
 }
+
+@keyframes go-button-anim {
+  0%{
+    background-color: rgba(92, 70, 48, 0.2);
+  }
+  70%{
+    background-color: rgba(92, 70, 48, 0.7);
+  }
+  100%{
+    background-color: rgba(92, 70, 48, 0.2);
+  }
+
+  
+}
+
 
 /*@font-face {
     font-family: scribble-1;
