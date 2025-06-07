@@ -26,9 +26,9 @@ body, html {
 .back{
   position: relative;
   z-index: 50;
-  align-self: flex-end;
+  align-self: center;
   font-family: inherit;
-  font-size: 2vw;
+  font-size: 1vw;
   background-color: rgb(70, 44, 18, 0);
   border: 2px solid #9f672f;
   border-radius: 0.5vw;
